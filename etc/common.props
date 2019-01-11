@@ -2,10 +2,10 @@
 
     <PropertyGroup>
         <Example-Serialisation-Major>1</Example-Serialisation-Major>
-        <Example-Serialisation-Minor>0</Example-Serialisation-Minor>
+        <Example-Serialisation-Minor>1</Example-Serialisation-Minor>
 
         <Example-Messaging-Major>1</Example-Messaging-Major>
-        <Example-Messaging-Minor>0</Example-Messaging-Minor>
+        <Example-Messaging-Minor>1</Example-Messaging-Minor>
     </PropertyGroup>
 
     <PropertyGroup>

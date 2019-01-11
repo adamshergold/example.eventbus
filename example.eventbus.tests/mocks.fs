@@ -21,18 +21,13 @@ module Mocks =
             }
         
         interface ITypeSerialisable
-            with 
-                member this.Type with get () = typeof<SimpleEvent>
 
         static member JSONSerialiser 
             with get () = 
-                { new ITypeSerialiser<SimpleEvent>
+                { new ITypeSerde<SimpleEvent>
                     with
                         member this.TypeName =
                             "SimpleEvent"
-        
-                        member this.Type
-                            with get () = typeof<SimpleEvent>
         
                         member this.ContentType
                             with get () = "json"
@@ -69,13 +64,10 @@ module Mocks =
                             
         static member BinarySerialiser 
             with get () = 
-                { new ITypeSerialiser<SimpleEvent>
+                { new ITypeSerde<SimpleEvent>
                     with
                         member this.TypeName =
                             "SimpleEvent"
-        
-                        member this.Type
-                            with get () = typeof<SimpleEvent>
         
                         member this.ContentType
                             with get () = "binary"
